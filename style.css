@@ -1,0 +1,213 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Great+Vibes&display=swap');
+
+
+/*===== All and body =====*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.text-center{
+  text-align: center;
+}
+body {
+  /* background: linear-gradient(#2b1055, #7597de); */
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/*====== Custom scrollbar ======*/
+
+* {
+  scrollbar-color: #fff transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c0522;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/*===== Responsive Mobile View =====*/
+
+@media screen and (max-width: 650px) {
+  .header {
+    justify-content: center;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+/*===== CSS =====*/
+
+
+/* Desktop wrapper */
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:300px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+
+/* Home section */
+.home-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.home-section:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(to top, #96b2b3, transparent);
+  z-index: 1001;
+}
+
+.home-section::after {
+  content: "";
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; 
+  background: linear-gradient(to bottom, transparent, #768794be,transparent);
+
+  z-index: 1000;
+}
+
+.home-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+
+.home-section img#moon {
+  /* mix-blend-mode: screen; */
+  z-index: 1000;
+}
+
+.home-section img#mountains_front,.home-section img#mountains_back {
+  z-index: 1000;
+}
+
+/* titolo */
+#btn-letsgo {
+  padding: 8px 30px;
+  color: #ffffff;
+  font-size: 45px;
+  text-decoration: none;
+  z-index: 1002;
+  font-family: 'Great Vibes', cursive;
+
+}
+
+#btn-letsgo span{
+  font-family: 'Cabin', sans-serif;
+  font-size: 30px;
+}
+
+
+/* About section */
+.about-section {
+  position: relative;
+  display: block;
+  padding: 50px;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  /* background-color: #1c0522; */
+  height: 100vh;
+}
+
+
+.about-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to bottom, #96b2b3e0, transparent);
+  z-index: 1000;
+}
+
+#stars{
+  opacity: 0.5;
+  z-index: 1000;
+}
+
+
+
+#gradient-canvas {
+  --gradient-color-1: #96b2b3;
+  --gradient-color-2: #fcff69;
+  --gradient-color-3: #ff61ab;
+  --gradient-color-4: #afcead;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* music */
+
+
+@media screen and (max-width: 690px) {
+ iframe{
+  height: 1047px;
+ }
+}
+
+@media screen and (max-width: 572px) {
+  iframe{
+   height: 1025px;
+  }
+ }
+
+ @media screen and (max-width: 497px) {
+  iframe{
+   height: 1115px;
+  }
+ }
