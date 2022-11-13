@@ -210,15 +210,26 @@ margin-top: 40px;
 #stars{
   opacity: 0.5;
   z-index: 1000;
+  display: none;
 }
 
 
 
-#gradient-canvas {
+/* #gradient-canvas {
   --gradient-color-1: #96b2b3;
   --gradient-color-2: #fcff69;
   --gradient-color-3: #ff61ab;
   --gradient-color-4: #afcead;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+#gradient-canvas {
+  --gradient-color-1: #afcafe;
+  --gradient-color-2: #d0dec0;
+  --gradient-color-3: #cca7b4;
+  --gradient-color-4: #8ed6e8;
   position: absolute;
   top: 0;
   left: 0;
