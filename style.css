@@ -107,7 +107,7 @@ header {
   right: 0;
   height: 100%;
   width: 100%; 
-  background: linear-gradient(to bottom, transparent, #768794be,transparent);
+  /* background: linear-gradient(to bottom, transparent, #768794be,transparent); */
 
   z-index: 1000;
 }
@@ -140,7 +140,10 @@ header {
   font-size: 20px;
   text-decoration: none;
   z-index: 1002;
-  padding: 0 20px;
+  padding: 20px;
+background: #afcafe8f;
+margin: 0 30px;
+border-radius: 10px;
 }
 
 
@@ -161,8 +164,8 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 50px 0;
-  background-color: #93afaf;
+  padding: 80px 0;
+  background-color: #afcafe;
   color: #ffffff;
   text-align: center;
 }
