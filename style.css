@@ -20,12 +20,18 @@
   text-align: center;
 
 }
+.centeredX{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
 body {
   /* background: linear-gradient(#2b1055, #7597de); */
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
 }
+
 
 /*====== Custom scrollbar ======*/
 
@@ -45,22 +51,8 @@ body {
   background: #fff;
 }
 
-/*===== Responsive Mobile View =====*/
-
-@media screen and (max-width: 650px) {
-  .header {
-    justify-content: center;
-  }
-
-  .nav {
-    display: none;
-  }
-}
-
-/*===== CSS =====*/
 
 
-/* Desktop wrapper */
 
 /* Header */
 header {
@@ -94,7 +86,7 @@ header {
   left: 0;
   height: 150px;
   width: 100%;
-  background: linear-gradient(to top, #96b2b3, transparent);
+  background: linear-gradient(to top, #afcafe, transparent);
   z-index: 1001;
 }
 
@@ -141,7 +133,8 @@ header {
   text-decoration: none;
   z-index: 1002;
   padding: 40px 20px;
-background: #afcafe8f;
+  background: linear-gradient(to bottom, #afcafe, #afcafe87);
+
 margin: 0 30px;
 border-radius: 10px;
 }
@@ -158,6 +151,26 @@ border-radius: 10px;
   font-size: 25px;
 }
 
+.rings, .location,.cerimonia{
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  margin: 30px 0;
+}
+
+.location{
+  background-image: url("images/icons8-location-64.png");
+}
+
+.cerimonia{
+  background-image: url("images/icons8-wedding-58.png");
+}
+
+
+
+.rings{
+  background-image: url("images/icons8-engagement-rings-66.png");
+}
 
 /* About section */
 .about-section {
@@ -187,7 +200,7 @@ border-radius: 10px;
   left: 0;
   height: 200px;
   width: 100%;
-  background: linear-gradient(to bottom, #96b2b3e0, transparent);
+  background: linear-gradient(to bottom, #afcafe, transparent);
   z-index: 1000;
  
 
@@ -198,7 +211,7 @@ border-radius: 10px;
 height: 300px;
 border-radius: 10px;
 overflow: hidden;
-margin-top: 40px;
+margin: 40px 0;
 }
 
 .img-box img{
@@ -306,4 +319,21 @@ margin-top: 40px;
 iframe#map{
   margin-top: 40px;
   border-radius: 20px;
+}
+
+/* responsive */
+
+
+
+@media screen and (min-width: 989px) {
+
+  #btn-letsgo h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+  }
+  
+  #btn-letsgo span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+  }
 }
