@@ -231,6 +231,10 @@ p.indirizzo{
 
 }
 
+.section-container{
+  padding: 0 20px;
+}
+
 /* .program::after{
   content: "";
   display: block;
