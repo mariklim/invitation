@@ -164,7 +164,7 @@ border-radius: 10px;
   font-size: 25px;
 }
 
-.rings, .location,.cerimonia, .drink{
+.rings, .location,.cerimonia, .drink, .gift{
   width: 60px;
   height: 60px;
   background-size: contain;
@@ -187,6 +187,11 @@ border-radius: 10px;
 
 .drink{
   background-image: url("images/icons8-drink-64.png");
+}
+
+.gift{
+  background-image: url("images/icons8-gift-64.png");
+
 }
 
 
@@ -241,7 +246,14 @@ padding-top: 100%;
 background-image: url('images/palazzo-reale-milano.jpg');
 background-size: cover;
 border-radius: 10px;
+}
 
+.img-box.brunch{
+  background-image: url('images/Brian-and-Barry-Building.jpg');
+}
+
+.img-box.gift-bg{
+  background-image: url('images/regali-matrimonio-civile-01.jpg');
 }
 #stars{
   opacity: 0.5;
@@ -312,16 +324,29 @@ margin-top: 40px;
 }
 
 .location-container> div:first-child{
-  padding-right: 10px;
+  padding-right: 30px;
 }
 iframe.map{
   border-radius: 10px;
 }
 
 
-iframe{
+iframe, .iban{
   width: 450px;
   height: 450px;
+}
+
+.iban{
+  background-color: #f0fff3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #4e7bcb;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 15px;
+
 }
 
 /* responsive */
@@ -334,6 +359,10 @@ iframe{
   iframe.map{
     margin-bottom: 20px;
   }
+
+  .iban{
+    margin-top: 20px;
+  }
   .location-container > div:first-child {
     padding-right: 0;
   }
@@ -341,7 +370,7 @@ iframe{
 
 @media screen and (max-width: 500px) {
 
-  iframe.map, .img-box {
+  iframe.map, .img-box, .iban {
    width: 300px;
    height: 300px;
   }
