@@ -5,24 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>duomo parallax</title>
+  <title>Wedding invitation</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="Gradient.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="wrapper desktop">
-    <!-- <header class="header">
-      <a href="#" class="logo">16.12.2022</a>
-      <ul class="nav">
-        <li><a href="#about">About</a></li>
-    <li><a href="#about">Works</a></li>
-    <li><a href="#about">Contact</a></li>
-      </ul>
-    </header> -->
+  <div class="weapper">
+
+  
 
     <section class="home-section text-center">
       <img src="images/bg-pattern.png" alt="Stars overlay" id="stars">
@@ -31,19 +24,19 @@
 
       <div id="btn-letsgo">
         <h1>Masha e Leo</h1>
-        <p>vi invita alla celebrazione del loro matrimonio      
-          <div class="centeredX">
-            <div class="rings">
-            </div>
-          </div>   
-          <strong>
+        <p>vi invita alla celebrazione del loro matrimonio
+        <div class="centeredX">
+          <div class="rings">
+          </div>
+        </div>
+        <strong>
           16 dicembre 2022
           <br>
           alle 10.00</strong>
-          <br> <br>
-          <span>
-            al Palazzo Reale di Milano
-          </span>
+        <br> <br>
+        <span>
+          al Palazzo Reale di Milano
+        </span>
         </p>
 
         <div class="scroll">
@@ -56,8 +49,6 @@
             </div>
           </a>
         </div>
-
-
       </div>
 
       <img src="images/palazzi.png" alt="Mountains front" id="mountains_front">
@@ -68,81 +59,47 @@
       gradient.initGradient('#gradient-canvas');
     </script>
 
-    <secion class="about-section" id="about">
-      <div class="section-container text-center">
-        <div class="text">
-          <h2>Location</h2>
-      
+    <div class="container">
+      <div class="info-section centeredX">
+        <div class="program-title text-center">
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Location</h2>
           <div class="centeredX">
-            <div class="location"></div>
+            <div  data-aos="fade-up"
+            data-aos-duration="1000" class="location"></div>   
           </div>
-       
-          <h3>Palazzo Reale di Milano</h3>
-          <p>Sala degli Specchi</p>
-          <p class="indirizzo">P.za del Duomo, 12, 20122 Milano</p>
-         
-        <iframe id="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.169639400648!2d9.190202658310977!3d45.46296897599702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6aec57575a1%3A0xdd579e63ba086381!2sPalazzo%20Reale%20Milano!5e0!3m2!1sit!2sit!4v1668371985345!5m2!1sit!2sit"
-          width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="centeredX">
-          <div class="img-box">
-            <img src="images/palazzo-reale-a-milano.webp" alt="palazzo reale">
+          <div data-aos="fade-up"
+          data-aos-duration="1000" class="location-description">
+            <h3>Palazzo Reale di Milano</h3>
+            <p>Sala degli Specchi</p>
+            <p class="indirizzo">
+              Piazza del Duomo, 12, 20122 Milano
+            </p>
           </div>
-        </div>
-          <h2>Programma</h2>
-          <div class="centeredX">
-            <div class="cerimonia"></div>
+          <div class="location-container">
+            <div data-aos="fade-up"
+            data-aos-duration="1000" class="iframe">
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11193.324866867246!2d9.1911569!3d45.4631314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd579e63ba086381!2sPalazzo%20Reale%20Milano!5e0!3m2!1sit!2sit!4v1668682517174!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+              <div data-aos="fade-up"
+              data-aos-duration="1000"class="img-box"></div>
+            </div>
+            
           </div>
-          <p class="program"> <strong>9.30 </strong>Incontro con ospiti davanti all'entrata</p>
- <img src="images/icons8-hearts-32.png" alt="">
-          <p class="program"><strong>9.45 </strong>Incontro con testimoni</p>
-          <img src="images/icons8-hearts-32.png" alt="">
-          <p class="program"><strong>10.00 - 10.30 </strong>Cerimonia</p>
+          
         </div>
 
-        
-        <h2>Brunch</h2>
-        
-        <div class="centeredX">
-          <div class="location"></div>
-        </div>
-
-        <h3>A'Riccione Terrazza12</h3>
-      
-        <p class="indirizzo">Via Durini, 28 c/o The Brian&Barry Building, 20122 Milano, 10° piano</p>
-
-        <div class="centeredX">
-          <div class="drink"></div>
-        </div>
-        <p> <strong>11.00 - 14.00 </strong>Brindisi e Brunch</p>
-
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d2798.2238326634965!2d9.19374731481934!3d45.46529478584772!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x4786c6aec57575a1%3A0xdd579e63ba086381!2sPalazzo%20Reale%20Milano%2C%20P.za%20del%20Duomo%2C%2012%2C%2020122%20Milano%20MI!3m2!1d45.463131399999995!2d9.1911569!4m5!1s0x4786c6a5202c05c3%3A0x3b0fa9332960ad0f!2sA&#39;Riccione%20Terrazza12%2C%20Via%20Durini%2C%20Milano%2C%20MI!3m2!1d45.4656908!2d9.1983394!5e0!3m2!1sit!2sit!4v1668424891578!5m2!1sit!2sit" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <div class="centeredX">
-         <div class="img-box">
-           <img src="images/Brian-and-Barry-Building.jpg" alt="palazzo reale">
-         </div>
-       </div>
-      
-   
-
-        
-       
       </div>
+    </div>
 
-
-      
-      </div> 
-
-
-      </section>
-  </div>
-
-
-
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </div>
 </body>
+
 
 </html>

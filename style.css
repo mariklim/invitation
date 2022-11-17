@@ -1,11 +1,10 @@
 
-
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Great+Vibes&display=swap');
 
 
-/*===== All and body =====*/
+/*===== common =====*/
 
 * {
   box-sizing: border-box;
@@ -25,13 +24,28 @@
   justify-content: center;
   display: flex;
 }
+
+.container{
+  background-color: #accaff;
+  color: #ffff;
+  padding: 80px 20px;
+}
+
 body {
   /* background: linear-gradient(#2b1055, #7597de); */
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
+  /* max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: center; */
+  background-color:#accaff;
 }
 
+.wrapper{
+  margin: 0 auto;
+}
 
 /*====== Custom scrollbar ======*/
 
@@ -200,81 +214,41 @@ border-radius: 10px;
 }
 
 
-.about-section h2{
+.info-section h2{
   font-size: 35px;
+  margin-bottom: 20px;
 }
 
-.about-section h3{
+.location-description h3{
   font-size: 25px;
 }
 
-.about-section p{
+.location-description p{
   font-size: 18px;
 }
 
 p.indirizzo{
   font-size: 16px;
-  margin: 10px 0;
-}
-.about-section h2:not(.about-section h2:first-child){
-  margin-top: 60px;
-}
-.about-section:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 200px;
-  width: 100%;
-  background: linear-gradient(to bottom, #afcafe, transparent);
-  z-index: 1000;
-
+  margin-top: 20px;
 }
 
-.section-container{
-  padding: 0 20px;
-}
 
-/* .program::after{
-  content: "";
-  display: block;
-  width: 32px;
-  height: 32px;
-  background-image: url("images/icons8-hearts-32.png");
-  background-size: cover;
-} */
+
 
 .img-box{
-  width: 300px;
-height: 300px;
+width: 450px;
+padding-top: 100%;
+background-image: url('images/palazzo-reale-milano.jpg');
+background-size: cover;
 border-radius: 10px;
-overflow: hidden;
-margin: 40px 0;
-}
 
-.img-box img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
-
 #stars{
   opacity: 0.5;
   z-index: 1000;
   display: none;
 }
 
-
-
-/* #gradient-canvas {
-  --gradient-color-1: #96b2b3;
-  --gradient-color-2: #fcff69;
-  --gradient-color-3: #ff61ab;
-  --gradient-color-4: #afcead;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 
 #gradient-canvas {
   --gradient-color-1: #afcafe;
@@ -285,27 +259,6 @@ margin: 40px 0;
   top: 0;
   left: 0;
 }
-
-/* music */
-
-
-/* @media screen and (max-width: 690px) {
- iframe{
-  height: 1047px;
- }
-}
-
-@media screen and (max-width: 572px) {
-  iframe{
-   height: 1025px;
-  }
- }
-
- @media screen and (max-width: 497px) {
-  iframe{
-   height: 1115px;
-  }
- } */
 
  /* scroll */
 
@@ -353,13 +306,50 @@ margin-top: 40px;
 
 
 /* map */
+.location-container{
+  margin: 30px 0;
+  display: flex;
+}
 
-iframe#map{
-  margin-top: 40px;
+.location-container> div:first-child{
+  padding-right: 10px;
+}
+iframe.map{
   border-radius: 10px;
 }
 
+
+iframe{
+  width: 450px;
+  height: 450px;
+}
+
 /* responsive */
+
+@media screen and (max-width: 990px) {
+  .location-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  iframe.map{
+    margin-bottom: 20px;
+  }
+  .location-container > div:first-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  iframe.map, .img-box {
+   width: 300px;
+   height: 300px;
+  }
+  .img-box{
+    padding-top: 0;
+  }
+ 
+}
 
 
 
@@ -375,3 +365,5 @@ iframe#map{
     font-size: 45px;
   }
 }
+
+
