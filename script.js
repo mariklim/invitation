@@ -18,23 +18,72 @@ window.addEventListener("scroll", function () {
 });
 
 // music
-var track = document.getElementById('track');
+// var track = document.getElementById('track');
 
-var controlBtn = document.getElementById('play-pause');
+// var controlBtn = document.getElementById('play-pause');
 
-function playPause() {
-    if (track.paused) {
-        track.play();
-        //controlBtn.textContent = "Pause";
-        controlBtn.className = "pause";
-    } else { 
-        track.pause();
-         //controlBtn.textContent = "Play";
-        controlBtn.className = "play";
-    }
-}
+// function playPause() {
+//     if (track.paused) {
+//         track.play();
+//         //controlBtn.textContent = "Pause";
+//         controlBtn.className = "pause";
+//     } else { 
+//         track.pause();
+//          //controlBtn.textContent = "Play";
+//         controlBtn.className = "play";
+//     }
+// }
 
-controlBtn.addEventListener("click", playPause);
-track.addEventListener("ended", function() {
-  controlBtn.className = "play";
+// controlBtn.addEventListener("click", playPause);
+// track.addEventListener("ended", function() {
+//   controlBtn.className = "play";
+// });
+
+
+$(function() {
+
+  var inWrap = $('.inner-wrapper'),
+  $slide = $('.slide');
+
+
+  function slideNext() {
+
+    inWrap.animate({left: '-200%'}, 200, function() {
+  
+      inWrap.css('left', '-100%');
+  
+      $('.slide').last().after($('.slide').first());
+  
+    });
+  
+  }
+
+
+   //Enabling auto scroll
+   sliderInterval = setInterval(slideNext, 4000);
+
+
+
+  $('.prev').on('click', function() {
+
+    inWrap.animate({left: '0%'}, 200, function() {
+
+      inWrap.css('left', '-100%');
+
+      $('.slide').first().before($('.slide').last());
+
+    });
+  });
+
+
+  $('.next').on('click', function() {
+
+    clearInterval(sliderInterval);
+
+    slideNext();
+
+  });
+
+
 });
+
