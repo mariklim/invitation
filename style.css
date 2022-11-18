@@ -1,4 +1,3 @@
-
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Great+Vibes&display=swap');
@@ -15,17 +14,18 @@
   scroll-behavior: smooth;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 
 }
-.centeredX{
+
+.centeredX {
   width: 100%;
   justify-content: center;
   display: flex;
 }
 
-.container{
+.container {
   background-color: #accaff;
   color: #ffff;
   padding: 80px 20px;
@@ -40,10 +40,10 @@ body {
   width: 100%;
   display: flex;
   justify-content: center; */
-  background-color:#accaff;
+  background-color: #accaff;
 }
 
-.wrapper{
+.wrapper {
   margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding:300px 0 0 0;
+  padding: 300px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,12 +107,12 @@ header {
 .home-section::after {
   content: "";
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%; 
+  width: 100%;
   /* background: linear-gradient(to bottom, transparent, #768794be,transparent); */
 
   z-index: 1000;
@@ -136,7 +136,8 @@ header {
   z-index: 1000;
 }
 
-.home-section img#mountains_front,.home-section img#mountains_back {
+.home-section img#mountains_front,
+.home-section img#mountains_back {
   z-index: 1000;
 }
 
@@ -148,8 +149,8 @@ header {
   z-index: 1002;
   padding: 40px 20px;
   background: linear-gradient(to bottom, #afcafee0, #afcafe63);
-margin: 0 30px;
-border-radius: 10px;
+  margin: 0 30px;
+  border-radius: 10px;
 }
 
 
@@ -164,32 +165,36 @@ border-radius: 10px;
   font-size: 25px;
 }
 
-.rings, .location,.cerimonia, .drink, .gift{
+.rings,
+.location,
+.cerimonia,
+.drink,
+.gift {
   width: 60px;
   height: 60px;
   background-size: contain;
   margin: 30px 0;
 }
 
-.location{
+.location {
   background-image: url("images/icons8-location-64.png");
 }
 
-.cerimonia{
+.cerimonia {
   background-image: url("images/icons8-wedding-58.png");
 }
 
 
 
-.rings{
+.rings {
   background-image: url("images/icons8-engagement-rings-66.png");
 }
 
-.drink{
+.drink {
   background-image: url("images/icons8-drink-64.png");
 }
 
-.gift{
+.gift {
   background-image: url("images/icons8-gift-64.png");
 
 }
@@ -207,32 +212,32 @@ border-radius: 10px;
   text-align: center;
 }
 
-.programma{
+.programma {
   z-index: 2000;
 }
 
 
-.text{
+.text {
   position: relative;
   z-index: 1001;
 
 }
 
 
-.info-section h2{
+.info-section h2 {
   font-size: 35px;
   margin-bottom: 20px;
 }
 
-.location-description h3{
+.location-description h3 {
   font-size: 25px;
 }
 
-.location-description p{
+.location-description p {
   font-size: 18px;
 }
 
-p.indirizzo{
+p.indirizzo {
   font-size: 16px;
   margin-top: 20px;
 }
@@ -240,22 +245,23 @@ p.indirizzo{
 
 
 
-.img-box{
-width: 450px;
-padding-top: 100%;
-background-image: url('images/palazzo-reale-milano.jpg');
-background-size: cover;
-border-radius: 10px;
+.img-box {
+  width: 450px;
+  padding-top: 100%;
+  background-image: url('images/palazzo-reale-milano.jpg');
+  background-size: cover;
+  border-radius: 10px;
 }
 
-.img-box.brunch{
+.img-box.brunch {
   background-image: url('images/Brian-and-Barry-Building.jpg');
 }
 
-.img-box.gift-bg{
+.img-box.gift-bg {
   background-image: url('images/regali-matrimonio-civile-01.jpg');
 }
-#stars{
+
+#stars {
   opacity: 0.5;
   z-index: 1000;
   display: none;
@@ -272,71 +278,75 @@ border-radius: 10px;
   left: 0;
 }
 
- /* scroll */
+/* scroll */
 
- .scroll {
-margin-top: 40px;
-	padding: 0;
+.scroll {
+  margin-top: 40px;
+  padding: 0;
   display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
 }
 
- .box span {
-	width: 14px;
-	height: 14px;
+.box span {
+  width: 14px;
+  height: 14px;
   display: block;
-	border-right: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-	transform: rotate(45deg);
-	margin: -10px;
-	animation: animate 2s infinite;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
 
 .box span:nth-child(2) {
-	animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 
 .box span:nth-child(3) {
-	animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 
 @keyframes animate {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-		transform: rotate(45deg) translate(10px, 10px);
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 
 /* map */
-.location-container{
+.location-container {
   margin: 30px 0;
   display: flex;
 }
 
-.location-container> div:first-child{
+.location-container>div:first-child {
   padding-right: 30px;
 }
-iframe.map{
+
+iframe.map {
   border-radius: 10px;
 }
 
 
-iframe, .iban{
+iframe,
+.iban {
   width: 450px;
   height: 450px;
 }
 
-.iban{
+.iban {
   background-color: #f0fff3;
   display: flex;
   justify-content: center;
@@ -349,6 +359,75 @@ iframe, .iban{
 
 }
 
+
+/* Slider */
+
+.slider-wrapper {
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.inner-wrapper {
+  width: 500%;
+  height: 100%;
+  position: relative;
+  left: -100%;
+}
+
+
+.slide {
+  width: 450px;
+  padding-top: 100%;
+  background-size: contain;
+  border-radius: 10px;
+  float: left;
+  background-position: center;
+ 
+}
+
+.slide.sl-1 {
+  background-image: url('images/IMG-0880.jpg');
+}
+
+.slide.sl-2 {
+  background-image: url('images/IMG-0911.jpg');
+}
+
+.slide.sl-3 {
+  background-image: url('images/IMG-1092.jpg');
+}
+
+.slide.sl-4 {
+  background-image: url('images/IMG-1262.jpg');
+}
+
+.slide.sl-5 {
+  background-image: url('images/IMG-1318.jpg');
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid black;
+  position: absolute;
+  cursor: pointer;
+
+}
+
+.prev {
+  border-left: 2px solid black;
+  left: 100px;
+  transform: rotate(-45deg);
+}
+
+.next {
+  border-right: 2px solid black;
+  right: 100px;
+  transform: rotate(45deg);
+}
+
 /* responsive */
 
 @media screen and (max-width: 990px) {
@@ -356,28 +435,38 @@ iframe, .iban{
     flex-wrap: wrap;
     justify-content: center;
   }
-  iframe.map{
+
+  iframe.map {
     margin-bottom: 20px;
   }
 
-  .iban{
+  .iban {
     margin-top: 20px;
   }
-  .location-container > div:first-child {
+
+  .location-container>div:first-child {
     padding-right: 0;
   }
 }
 
 @media screen and (max-width: 500px) {
 
-  iframe.map, .img-box, .iban {
-   width: 300px;
-   height: 300px;
+  iframe.map,
+  .img-box,
+  .iban,
+  .slider-wrapper {
+    width: 300px;
+    height: 300px;
   }
-  .img-box{
+
+  .slide {
+    width: 300px;
+  }
+
+  .img-box {
     padding-top: 0;
   }
- 
+
 }
 
 
@@ -388,11 +477,9 @@ iframe, .iban{
     font-family: 'Great Vibes', cursive;
     font-size: 60px;
   }
-  
+
   #btn-letsgo span {
     font-family: 'Great Vibes', cursive;
     font-size: 45px;
   }
 }
-
-
