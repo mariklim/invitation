@@ -406,7 +406,17 @@ iframe,
 .slide.sl-5 {
   background-image: url('images/IMG-1318.jpg');
 }
+.slide.sl-6 {
+  background-image: url('images/montagna.jpg');
+}
 
+.slide.sl-7 {
+  background-image: url('images/sub.jpg');
+}
+
+.slide.sl-8 {
+  background-image: url('images/IMG-1581.jpg');
+}
 .button {
   width: 30px;
   height: 30px;
