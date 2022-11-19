@@ -1,0 +1,631 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Great+Vibes&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+
+
+
+/*===== common =====*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.text-center {
+  text-align: center;
+
+}
+
+.centeredX {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  background-color: #accaff;
+  color: #ffff;
+  padding: 80px 20px;
+}
+
+body {
+  /* background: linear-gradient(#2b1055, #7597de); */
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  /* max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: center; */
+  background-color: #accaff;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+/*====== Custom scrollbar ======*/
+
+* {
+  scrollbar-color: #fff transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c0522;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+
+
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: end;
+  z-index: 10000;
+  color: #ffffff;
+}
+
+/* Lang nav */
+
+/* Home section */
+.home-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-section:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(to top, #afcafe, transparent);
+  z-index: 1001;
+}
+
+.home-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  /* background: linear-gradient(to bottom, transparent, #768794be,transparent); */
+
+  z-index: 1000;
+}
+
+.home-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+
+.home-section img#moon {
+  /* mix-blend-mode: screen; */
+  z-index: 1000;
+}
+
+.home-section img#mountains_front,
+.home-section img#mountains_back {
+  z-index: 1000;
+}
+
+/* titolo */
+#btn-letsgo {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  z-index: 1002;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #afcafee0, #afcafe63);
+  margin: 0 30px;
+  border-radius: 10px;
+}
+
+
+
+#btn-letsgo h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+}
+
+#btn-letsgo span {
+  font-family: 'Great Vibes', cursive;
+  font-size: 25px;
+}
+
+.rings,
+.location,
+.cerimonia,
+.drink,
+.gift {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  margin: 30px 0;
+}
+
+.location {
+  background-image: url("images/icons8-location-64.png");
+}
+
+.cerimonia {
+  background-image: url("images/icons8-wedding-58.png");
+}
+
+
+
+.rings {
+  background-image: url("images/icons8-engagement-rings-66.png");
+}
+
+.drink {
+  background-image: url("images/icons8-drink-64.png");
+}
+
+.gift {
+  background-image: url("images/icons8-gift-64.png");
+
+}
+
+
+
+/* About section */
+.about-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background-color: #afcafe;
+  color: #ffffff;
+  text-align: center;
+}
+
+.programma {
+  z-index: 2000;
+}
+
+
+.text {
+  position: relative;
+  z-index: 1001;
+
+}
+
+
+.info-section h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.location-description h3 {
+  font-size: 25px;
+}
+
+.location-description p {
+  font-size: 18px;
+}
+
+p.indirizzo {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+
+
+.img-box {
+  width: 450px;
+  padding-top: 100%;
+  background-image: url('images/palazzo-reale-milano.jpg');
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.img-box.brunch {
+  background-image: url('images/Brian-and-Barry-Building.jpg');
+}
+
+.img-box.gift-bg {
+  background-image: url('images/regali-matrimonio-civile-01.jpg');
+}
+
+#stars {
+  opacity: 0.5;
+  z-index: 1000;
+  display: none;
+}
+
+
+#gradient-canvas {
+  --gradient-color-1: #afcafe;
+  --gradient-color-2: #d0dec0;
+  --gradient-color-3: #cca7b4;
+  --gradient-color-4: #8ed6e8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* scroll */
+
+.scroll {
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.box span {
+  width: 14px;
+  height: 14px;
+  display: block;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* map */
+.location-container {
+  margin: 30px 0;
+  display: flex;
+}
+
+.location-container>div:first-child {
+  padding-right: 30px;
+}
+
+iframe.map {
+  border-radius: 10px;
+}
+
+
+iframe,
+.iban {
+  width: 450px;
+  height: 450px;
+}
+
+.iban {
+  background-color: #f0fff3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #4e7bcb;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 15px;
+
+}
+
+
+/* Slider */
+
+.slider-wrapper {
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.inner-wrapper {
+  width: 500%;
+  height: 100%;
+  position: relative;
+  left: -100%;
+}
+
+
+.slide {
+  width: 450px;
+  padding-top: 100%;
+  background-size: contain;
+  border-radius: 10px;
+  float: left;
+  background-position: center;
+ 
+}
+
+.slide.sl-1 {
+  background-image: url('images/IMG-0880.jpg');
+}
+
+.slide.sl-2 {
+  background-image: url('images/IMG-0911.jpg');
+}
+
+.slide.sl-3 {
+  background-image: url('images/IMG-1092.jpg');
+}
+
+.slide.sl-4 {
+  background-image: url('images/IMG-1262.jpg');
+}
+
+.slide.sl-5 {
+  background-image: url('images/IMG-1318.jpg');
+}
+.slide.sl-6 {
+  background-image: url('images/montagna.jpg');
+}
+
+.slide.sl-7 {
+  background-image: url('images/sub.jpg');
+}
+
+.slide.sl-8 {
+  background-image: url('images/IMG-1581.jpg');
+}
+.button {
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid black;
+  position: absolute;
+  cursor: pointer;
+
+}
+
+.prev {
+  border-left: 2px solid black;
+  left: 100px;
+  transform: rotate(-45deg);
+}
+
+.next {
+  border-right: 2px solid black;
+  right: 100px;
+  transform: rotate(45deg);
+}
+
+/* responsive */
+
+@media screen and (max-width: 990px) {
+  .location-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  iframe.map {
+    margin-bottom: 20px;
+  }
+
+  .iban {
+    margin-top: 20px;
+  }
+
+  .location-container>div:first-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  iframe.map,
+  .img-box,
+  .iban,
+  .slider-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .slide {
+    width: 300px;
+  }
+
+  .img-box {
+    padding-top: 0;
+  }
+
+
+  
+  header{
+    /* padding: 20px; */
+  }
+
+}
+
+
+
+@media screen and (min-width: 989px) {
+
+  #btn-letsgo h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+  }
+
+  #btn-letsgo span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+  }
+}
+
+/* preloader */
+
+#cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 200px;
+  color: rgb(255, 255, 255);
+  font-family:tahoma;
+}
+
+
+.center{
+  display: flex;
+} 
+.back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #accbff8e;;
+    animation-name: backdiv;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+  }
+
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d8e6ff;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  .heart:after {
+    background-color: #d8e6ff;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart:before {
+    background-color: #d8e6ff;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+
+  @keyframes backdiv {
+    50% {
+      background: #a6c3f6
+    }
+  }
+
+  @keyframes beat {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
+  }
+
+
+/* Back to top */
+
+#button {
+  display: inline-block;
+  background-color: #d2e1fad9;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #7a98cbd9;
+}
+#button:active {
+  background-color: #7a98cbd9;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
