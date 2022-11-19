@@ -1,4 +1,10 @@
 
+// preoloader
+
+$(window).on('load', function () {
+  $("#cover").fadeOut(1750);
+  });
+
 
 // let stars = document.getElementById("stars");
 let moon = document.getElementById("moon");
@@ -86,4 +92,23 @@ $(function() {
 
 
 });
+
+
+// btn back to top
+
+var btnBackTop = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btnBackTop.addClass('show');
+  } else {
+    btnBackTop.removeClass('show');
+  }
+});
+
+btnBackTop.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
 
