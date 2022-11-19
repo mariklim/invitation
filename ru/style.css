@@ -78,7 +78,7 @@ header {
   padding: 50px;
   display: flex;
   justify-content: end;
-  z-index: 10000;
+  z-index: 9998;
   color: #ffffff;
 }
 
@@ -259,13 +259,13 @@ p.indirizzo {
 .img-box {
   width: 450px;
   padding-top: 100%;
-  background-image: url('images/palazzo-reale-milano.jpg');
+  background-image: url('images/palazzo-reale-milano-1.jpg');
   background-size: cover;
   border-radius: 10px;
 }
 
 .img-box.brunch {
-  background-image: url('images/Brian-and-Barry-Building.jpg');
+  background-image: url('images/Brian-and-Barry-Building-1.jpg');
 }
 
 .img-box.gift-bg {
@@ -490,9 +490,6 @@ iframe,
 
 
   
-  header{
-    /* padding: 20px; */
-  }
 
 }
 
