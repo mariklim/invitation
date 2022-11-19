@@ -69,7 +69,6 @@ body {
 
 
 
-
 /* Header */
 header {
   position: absolute;
@@ -83,7 +82,16 @@ header {
   color: #ffffff;
 }
 
-/* Lang nav */
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+header a:hover, header a:active{
+  font-weight: bolder;
+}
 
 /* Home section */
 .home-section {
