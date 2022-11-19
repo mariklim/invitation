@@ -571,7 +571,7 @@ iframe,
     left: 25px;
   }
   .heart:before {
-    background-color: #d8e6ff;
+    background-color: #d8e6ff;;
     content: "";
     border-radius: 50%;
     position: absolute;
@@ -583,7 +583,7 @@ iframe,
 
   @keyframes backdiv {
     50% {
-      background: #a6c3f6
+      background: #d8e6ff;
     }
   }
 
