@@ -30,7 +30,7 @@
 .container {
   background-color: #accaff;
   color: #ffff;
-  padding: 80px 20px;
+  padding: 20px;
 }
 
 body {
@@ -273,6 +273,7 @@ p.indirizzo {
 
 .img-box.gift-bg {
   background-image: url('images/regali-matrimonio-civile-01.jpg');
+
 }
 
 #stars {
@@ -376,6 +377,12 @@ iframe,
 
 /* Slider */
 
+.slider-container{
+  display: grid;
+  place-content: center;
+  margin-top: 50px;
+}
+
 .slider-wrapper {
   width: 450px;
   height: 450px;
@@ -465,7 +472,7 @@ iframe,
   }
 
   .iban {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .location-container>div:first-child {
@@ -635,6 +642,5 @@ iframe,
   opacity: 1;
   visibility: visible;
 }
-
 
 
